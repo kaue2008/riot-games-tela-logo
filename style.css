@@ -19,3 +19,78 @@ main{
     --blue: #1b77f3;
     --red: #cf3c3f;
 }
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    min-width: 100vh;
+    padding:clamp (35px, 8%, 70px) ;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login_logo{
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom:30px ;
+}
+.login_lobel{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.login_label span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+.input {
+    width: 100%;
+    background-color: var(--light-grey);
+    border: rgba(255, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10 px 10 px ;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+.input :focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+.login_label .span :active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+.login_icon{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.login_icon img {
+    width: 20px ;
+}
+.icon_button {
+    width:33.33% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
